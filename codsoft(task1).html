@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .about img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skills li {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .resume, .contact {
+            text-align: center;
+        }
+
+        .resume a {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .resume a:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dharani Mupparaju</h1>
+        <p>Web Developer & Designer</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#aboutme">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <img src="https://www.bing.com/images/search?view=detailV2&ccid=fnjmBpAg&id=6048E1F87D10B54BAFD6B50EA8EEA1E5ECF011F5&thid=OIP.fnjmBpAgXAI4KeRZFZeN2QHaHa&mediaurl=https%3a%2f%2feasy-peasy.ai%2fcdn-cgi%2fimage%2fquality%3d80%2cformat%3dauto%2cwidth%3d700%2fhttps%3a%2f%2ffdczvxmwwjwpwbeeqcth.supabase.co%2fstorage%2fv1%2fobject%2fpublic%2fimages%2f0358c750-8e66-4cdb-a64d-1afbcfda3d7a%2f931d51a7-daa4-4bc9-a457-5a948132ca83.png&exph=700&expw=700&q=graduating+women+images+paints&simid=608044856361358872&FORM=IRPRST&ck=3C59934E2B96BD6B7855BD16D09D62C9&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0" alt="Profile Picture">
+        <div>
+            <h2>About Me</h2>
+            <p>I am a recent Bachelor of Technology graduate in Computer Science, passionate about web development. I specialize in front-end technologies like HTML, CSS, and JavaScript, and I enjoy creating responsive and user-friendly websites. With a strong focus on clean design and functionality, I constantly strive to learn new tools and frameworks. My goal is to build engaging digital experiences that combine aesthetics with performance.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C Language </li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Html</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+            <h3>Project One</h3>
+            <p>Attendance login page.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="Project 2">
+            <h3>Project Two</h3>
+            <p>Own Webpage using Html,Css.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300x200" alt="Project 3">
+            <h3>Project Three</h3>
+            <p>A portfolio website showcasing my design skills.</p>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <p>Download my resume to learn more about my professional background.</p>
+        <a href="resume.pdf" download>Download Resume</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: dharanigmail.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dharani. All rights reserved.</p>
+    </footer>
+</body>
+</html>
